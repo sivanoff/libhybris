@@ -3,7 +3,8 @@ eglinclude_HEADERS = \
 	EGL/egl.h \
 	EGL/eglext.h \
 	EGL/eglmesaext.h \
-	EGL/eglplatform.h
+	EGL/eglplatform.h \
+	EGL/fbdev_window.h
 
 glesincludedir = $(includedir)/GLES
 glesinclude_HEADERS = \

@@ -34,7 +34,7 @@ extern "C" {
 
 /* Header file version number */
 /* Current version at http://www.khronos.org/registry/egl/ */
-/* $Revision: 18699 $ on $Date: 2012-07-31 03:04:59 -0700 (Tue, 31 Jul 2012) $ */
+/* $Revision: 18903 $ on $Date: 2012-08-14 23:33:48 -0700 (Tue, 14 Aug 2012) $ */
 #define EGL_EGLEXT_VERSION 14
 
 #ifndef EGL_KHR_config_attribs
@@ -455,24 +455,6 @@ typedef EGLNativeFileDescriptorKHR (EGLAPIENTRYP PFNEGLGETSTREAMFILEDESCRIPTORKH
 typedef EGLStreamKHR (EGLAPIENTRYP PFNEGLCREATESTREAMFROMFILEDESCRIPTORKHRPROC)(EGLDisplay dpy, EGLNativeFileDescriptorKHR file_descriptor);
 #endif
 #endif
-
-
-#ifndef EGL_EXT_swap_buffers_with_damage
-#define EGL_EXT_swap_buffers_with_damage 1
-#ifdef EGL_EGLEXT_PROTOTYPES
-EGLAPI EGLBoolean EGLAPIENTRY eglSwapBuffersWithDamageEXT( EGLDisplay dpy, EGLSurface surface, EGLint *rects, EGLint n_rects);
-#endif /* EGL_EGLEXT_PROTOTYPES */
-typedef EGLBoolean (EGLAPIENTRYP PFNEGLSWAPBUFFERSWITHDAMAGEEXTPROC)(EGLDisplay dpy, EGLSurface surface, EGLint *rects, EGLint n_rects);
-#endif
-
-
-#ifndef EGL_EXT_buffer_age
-#define EGL_EXT_buffer_age 1
-#define EGL_BUFFER_AGE_EXT			0x313D
-#endif
-
-
-#include <EGL/eglmesaext.h>
 
 #ifdef __cplusplus
 }
