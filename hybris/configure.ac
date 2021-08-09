@@ -109,8 +109,8 @@ AC_ARG_ENABLE(arch,
                               x86: Compile for x86],
   [ if   test "x$enableval" = "xarm" ; then
       arch="arm"
-   elif test "x$enableval" = "xarm64" ; then
-      arch="arm64"
+   elif test "x$enableval" = "xaarch64" ; then
+      arch="aarch64"
    elif test "x$enableval" = "xx86" ; then
       arch="x86"
    elif test "x$enableval" = "xx86-64" ; then
